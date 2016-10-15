@@ -41,7 +41,7 @@ int readingCount = 0;
 
 void setup() {
   eHealth.initPulsioximeter();
-  //eHealth.readBloodPressureSensor();
+  eHealth.readBloodPressureSensor();
   //Attach the inttruptions for using the pulsioximeter.
   PCintPort::attachInterrupt(6, readPulsioximeter, RISING);
   Wire.begin();
